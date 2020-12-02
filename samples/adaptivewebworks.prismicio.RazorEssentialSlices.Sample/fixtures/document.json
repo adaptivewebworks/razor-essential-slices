@@ -1,0 +1,95 @@
+{
+    "id": "WV-gECQAACgAYZhq",
+    "uid": null,
+    "type": "page",
+    "href": "https://slice-samples.prismic.io/api/v1/documents/search?ref=WYhXLigAACUA3hcM&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WV-gECQAACgAYZhq%22%29+%5D%5D",
+    "tags": [],
+    "first_publication_date": "2017-07-07T14:52:04+0000",
+    "last_publication_date": "2017-08-07T12:01:21+0000",
+    "slugs": [
+        "new-slices"
+    ],
+    "lang": "en-us",
+    "alternate_languages": [
+        {
+            "id": "WV-gECQAACgAYZhx",
+            "uid": "sample",
+            "type": "sample",
+            "lang": "en-gb"
+        }
+    ],
+    "linked_documents": [],
+    "data": {
+        "page": {
+            "title": {
+                "type": "StructuredText",
+                "value": [
+                    {
+                        "type": "heading1",
+                        "text": "Page Title",
+                        "spans": []
+                    }
+                ]
+            },
+            "body": {
+                "type": "SliceZone",
+                "value": [
+                    {
+                        "type": "Slice",
+                        "slice_type": "call",
+                        "slice_label": "cta",
+                        "repeat": [],
+                        "non-repeat": {
+                            "icon_image": {
+                                "type": "Image",
+                                "value": {
+                                    "main": {
+                                        "dimensions": {
+                                            "width": 72,
+                                            "height": 72
+                                        },
+                                        "alt": "Some alt text for the image.",
+                                        "copyright": null,
+                                        "url": "https://images.prismic.io/slicesexamples/0a64ab37-8ba3-4882-a766-53bad869d3cf_cta-eyebrow-icon.svg?auto=compress,format&w=900"
+                                    },
+                                    "views": {}
+                                }
+                            },
+                            "title": {
+                                "type": "StructuredText",
+                                "value": [
+                                    {
+                                        "type": "heading1",
+                                        "text": "Collector Slices kit",
+                                        "spans": []
+                                    }
+                                ]
+                            },
+                            "paragraph": {
+                                "type": "StructuredText",
+                                "value": [
+                                    {
+                                        "type": "paragraph",
+                                        "text": "It’s very easy to create stylish and beautiful prototypes for your future projects, both graphical and dynamic.",
+                                        "spans": []
+                                    }
+                                ]
+                            },
+                            "button_link": {
+                                "type": "Link.web",
+                                "value": {
+                                    "link_type": "Web",
+                                    "url": "https://prismic.io"
+                                }
+                            },
+                            "button_label": {
+                                "type": "Text",
+                                "value": "Click Here"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

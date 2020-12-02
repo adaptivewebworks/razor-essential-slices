@@ -1,0 +1,40 @@
+@model prismic.fragments.CompositeSlice
+@{
+    var primary = Model.GetPrimary();
+    var image = primary.GetImage("icon_image");
+}
+
+<ps-section
+    :darkMode="darkMode || darkModeLabel"
+    classAttr="ps-cta"
+    v-bind="theme.wrapper"
+>
+    <div class="ps__wrap">
+        <div class="ps__head" style="theme.align ? `text-align: ${theme.align}` : ''">
+            <header class="ps__header">
+                <slot name="header" v-bind="slice.primary">
+                    <prismic-image
+                       
+                        Document="@primary"
+                        Field="icon_image"
+                    />
+                    @* <img src="@image.GetView("main").Url" /> *@
+                    <ps-title :theme="theme.title" :align="theme.align" :color="theme.color">
+                        @primary.GetText("title")
+                    </ps-title>
+                </slot>
+            </header>
+            <ps-description :theme="theme.description" :align="theme.align" :color="theme.color">
+                @primary.GetText("paragraph")
+            </ps-description>
+            <slot name="cta" v-bind="slice.primary">
+                <ps-button
+                    :theme="theme.button"
+                    :link="slice.primary.button_link"
+                >
+                    @primary.GetText("button_label")
+                </ps-button>
+            </slot>
+        </div>
+    </div>
+</ps-section>

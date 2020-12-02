@@ -1,0 +1,21 @@
+@import "../styles/styles.scss";
+@import "../styles/settings";
+.ps-cta {
+	text-align: center;
+}
+
+.ps-cta .ps-button {
+	@media all and (min-width: 30em) {
+		display: inline-block;
+		margin-top: var(--h-padding);
+	}
+}
+
+.ps--black {
+	.ps__title {
+		color: #fff;
+	}
+	.ps__desc > * {
+		color: #fff;
+	}
+}

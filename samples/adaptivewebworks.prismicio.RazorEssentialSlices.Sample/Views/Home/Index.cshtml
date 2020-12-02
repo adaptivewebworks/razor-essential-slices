@@ -1,0 +1,10 @@
+﻿@using prismic.fragments;
+@model prismic.Document;
+@{
+    ViewData["Title"] = "Home Page";
+    
+    var sliceZone = @Model.GetSliceZone("page.body");
+    var cta = sliceZone.Slices[0] as CompositeSlice;
+}
+
+<partial name="CallToAction" for={@cta} />
